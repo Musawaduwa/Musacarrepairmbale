@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://musacarrepairembale.netlify.app/sitemap.xml
+Sitemap: https://musacarwiringmbale.online/sitemap.xml
