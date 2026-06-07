@@ -3,7 +3,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://www.musacarwiringmbale.netlify.app/</loc>
+    <loc>https://www.musacarrepairmbale.netlify.app/</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -11,7 +11,7 @@
 
   <!-- Hero / Top of page -->
   <url>
-    <loc>https://www.musacarwiringmbale.netlify.app/#hero</loc>
+    <loc>https://www.musacarrepairmbale.netlify.app/#hero</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -19,7 +19,7 @@
 
   <!-- About / Expert Section -->
   <url>
-    <loc>https://www.musacarwiringmbale.netlify.app/#expert</loc>
+    <loc>https://www.musacarrepairmbale.netlify.app/#expert</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -27,7 +27,7 @@
 
   <!-- Services -->
   <url>
-    <loc>https://www.musacarwiringmbale.netlify.app/#services</loc>
+    <loc>https://www.musacarrepairmbale.netlify.app/#services</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -35,7 +35,7 @@
 
   <!-- Work Done / Stats -->
   <url>
-    <loc>https://www.musacarwiringmbale.netlify.app/#workdone</loc>
+    <loc>https://www.musacarrepairmbale.netlify.app/#workdone</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -43,7 +43,7 @@
 
   <!-- Why Choose Us -->
   <url>
-    <loc>https://www.musacarwiringmbale.netlify.app/#whychoose</loc>
+    <loc>https://www.musacarrepairmbale.netlify.app/#whychoose</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -51,7 +51,7 @@
 
   <!-- Our Process -->
   <url>
-    <loc>https://www.musacarwiringmbale.netlify.app/#process</loc>
+    <loc>https://www.musacarrepairmbale.netlify.app/#process</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -59,7 +59,7 @@
 
   <!-- Spare Parts -->
   <url>
-    <loc>https://www.musacarwiringmbale.netlify.app/#spareparts</loc>
+    <loc>https://www.musacarrepairmbale.netlify.app/#spareparts</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -67,7 +67,7 @@
 
   <!-- Gallery -->
   <url>
-    <loc>https://www.musacarwiringmbale.netlify.app/#gallery</loc>
+    <loc>https://www.musacarrepairmbale.netlify.app/#gallery</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -75,7 +75,7 @@
 
   <!-- Contact -->
   <url>
-    <loc>https://www.musacarwiringmbale.netlify.app/#contact</loc>
+    <loc>https://www.musacarrepairmbale.netlify.app/#contact</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>

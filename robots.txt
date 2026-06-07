@@ -1,5 +1,5 @@
 # robots.txt – Musa Car Wiring & Diagnosis Mbale
-# https://www.musacarwiringmbale.netlify.app
+# https://www.musacarrepairmbale.netlify.app
 
 # ── Allow all major search engine crawlers ──
 User-agent: Googlebot
@@ -41,4 +41,4 @@ User-agent: *
 Allow: /
 
 # ── Sitemap location ──
-Sitemap: https://www.musacarwiringmbale.netlify.app/sitemap.xml
+Sitemap: https://www.musacarrepairmbale.netlify.app/sitemap.xml
