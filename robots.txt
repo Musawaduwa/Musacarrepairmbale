@@ -1,5 +1,5 @@
 # Robots.txt for Musa Car Wiring & Diagnosis Mbale
-# https://musacarrepairmbale.netlify.app/
+# https://musacarwiringmbale.netlify.app/
 # Created: 2026-07-27 - Optimized for indexing
 
 User-agent: *
@@ -47,7 +47,7 @@ User-agent: WhatsApp
 Allow: /
 
 # Sitemap location - critical for indexing
-Sitemap: https://musacarrepairmbale.netlify.app/sitemap.xml
+Sitemap: https://musacarwiringmbale.netlify.app/sitemap.xml
 
 # Host directive (optional, helps with canonical)
-# Host: https://musacarrepairmbale.netlify.app
+# Host: https://musacarwiringmbale.netlify.app
