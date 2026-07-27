@@ -1,15 +1,26 @@
-# robots.txt – Musa Car Wiring & Diagnosis Mbale
-# https://musacarwiringmbale.netlify.app
+# Robots.txt for Musa Car Wiring & Diagnosis Mbale
+# https://musacarrepairmbale.netlify.app/
+# Created: 2026-07-27 - Optimized for indexing
 
-# ── Allow all major search engine crawlers ──
+User-agent: *
+Allow: /
+Disallow: /cdn-cgi/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all major search engine bots full access
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Googlebot-Image
 Allow: /
+Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Slurp
 Allow: /
@@ -20,10 +31,9 @@ Allow: /
 User-agent: Baiduspider
 Allow: /
 
-User-agent: YandexBot
+User-agent: Yandex
 Allow: /
 
-# ── Allow social preview bots ──
 User-agent: facebookexternalhit
 Allow: /
 
@@ -36,10 +46,8 @@ Allow: /
 User-agent: WhatsApp
 Allow: /
 
-# ── Default: allow all other bots ──
-User-agent: *
-Allow: /
+# Sitemap location - critical for indexing
+Sitemap: https://musacarrepairmbale.netlify.app/sitemap.xml
 
-# ── Sitemap location ──
-Sitemap: https://musacarwiringmbale.netlify.app
-/sitemap.xml
+# Host directive (optional, helps with canonical)
+# Host: https://musacarrepairmbale.netlify.app
