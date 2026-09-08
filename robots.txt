@@ -1,53 +1,29 @@
-# Robots.txt for Musa Car Wiring & Diagnosis Mbale
-# https://musacarwiringmbale.netlify.app/
-# Created: 2026-07-27 - Optimized for indexing
+# robots.txt for musacarwiring.autos
+# Musa Car Wiring and Diagnosis Mbale
 
+# Allow every search engine and AI crawler to index the whole site
 User-agent: *
 Allow: /
-Disallow: /cdn-cgi/
-Disallow: /_next/
-Disallow: /admin/
-Disallow: /private/
 
-# Allow all major search engine bots full access
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 0
-
-User-agent: Googlebot-Image
-Allow: /
-Crawl-delay: 0
-
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 0
-
-User-agent: Slurp
+# Popular AI answer-engine crawlers — allowed explicitly so the business
+# can be found and quoted correctly in AI search / chatbot answers
+User-agent: GPTBot
 Allow: /
 
-User-agent: DuckDuckBot
+User-agent: ChatGPT-User
 Allow: /
 
-User-agent: Baiduspider
+User-agent: Google-Extended
 Allow: /
 
-User-agent: Yandex
+User-agent: PerplexityBot
 Allow: /
 
-User-agent: facebookexternalhit
+User-agent: ClaudeBot
 Allow: /
 
-User-agent: Twitterbot
+User-agent: anthropic-ai
 Allow: /
 
-User-agent: LinkedInBot
-Allow: /
-
-User-agent: WhatsApp
-Allow: /
-
-# Sitemap location - critical for indexing
-Sitemap: https://musacarwiringmbale.netlify.app/sitemap.xml
-
-# Host directive (optional, helps with canonical)
-# Host: https://musacarwiringmbale.netlify.app
+# Sitemap location — tells crawlers exactly where to find every page/section
+Sitemap: https://musacarwiring.autos/sitemap.xml
