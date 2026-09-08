@@ -26,4 +26,4 @@ User-agent: anthropic-ai
 Allow: /
 
 # Sitemap location — tells crawlers exactly where to find every page/section
-Sitemap: https://www.musacarwiring.autos/sitemap.xml
+Sitemap: https://musacarwiring.autos/sitemap.xml
