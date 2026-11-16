@@ -2865,7 +2865,8 @@ var hasCfg=!!(C.SUPABASE_URL&&C.SUPABASE_ANON_KEY&&window.supabase);
 var DEMO=!hasCfg&&location.protocol!=='http:'&&location.protocol!=='https:';
 if(!hasCfg&&!DEMO){st.textContent='Customer comments are being set up. Please check back soon.';return}
 var sb=hasCfg?window.supabase.createClient(C.SUPABASE_URL,C.SUPABASE_ANON_KEY):null;
-var user=null,isAdmin=false,PAGE=8,offset=0,done=false,busy=false;
+var user=null,isAdmin=false,PAGE=8,offset=0,done=false,busy=false,cards={};
+function imgPaths(urls){var p=[];(urls||[]).forEach(function(u){var i=u.indexOf('/comment-images/');if(i>-1)p.push(decodeURIComponent(u.slice(i+16).split('?')[0]))});return p}
 function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
 function stars(n){return n?new Array(n+1).join('\u2605')+new Array(6-n).join('\u2606'):''}
 function dispName(u){return(u.user_metadata&&u.user_metadata.full_name)||String(u.email||'').split('@')[0]||'Customer'}
@@ -2922,7 +2923,11 @@ function renderComment(c,likes,liked,reps){
  else{var p=el('p','mc-meta');p.innerHTML='<a href="/account.html">Log in</a> to reply.';form.appendChild(p)}
  box.appendChild(thread);box.appendChild(form);
  rb.onclick=function(){var open=box.style.display==='block';box.style.display=open?'none':'block';if(!open)drawThread()};
- lpaint();rpaint();bar.appendChild(lb);bar.appendChild(rb);card.appendChild(bar);card.appendChild(note);card.appendChild(box);return card}
+ card._push=function(row){for(var i=0;i<reps.length;i++){if(reps[i].id===row.id)return}reps.push(row);rpaint();if(box.style.display==='block')drawThread()};
+ lpaint();rpaint();bar.appendChild(lb);bar.appendChild(rb);
+ if(isAdmin&&sb){var dc=el('button','mc-del','Delete comment');dc.type='button';dc.onclick=function(){if(!confirm('Delete this comment and its photos?'))return;
+   var ps=imgPaths(c.images);(ps.length?sb.storage.from('comment-images').remove(ps):Promise.resolve()).then(function(){return sb.from('comments').delete().eq('id',c.id)}).then(function(r){if(!r.error){card.remove();delete cards[c.id]}})};bar.appendChild(dc)}
+ card.appendChild(bar);card.appendChild(note);card.appendChild(box);return card}
 function load(){
  if(busy||done)return;busy=true;
  if(DEMO){st.textContent='Preview mode: these are sample comments. Likes and replies here are not saved.';
@@ -2939,12 +2944,18 @@ function load(){
    (x[0].data||[]).forEach(function(l){lc[l.comment_id]=l.likes});
    (x[1].data||[]).forEach(function(l){my[l.comment_id]=1});
    (x[2].data||[]).forEach(function(rr){(rp[rr.comment_id]=rp[rr.comment_id]||[]).push(rr)});
-   rows.forEach(function(c){list.appendChild(renderComment(c,lc[c.id]||0,!!my[c.id],rp[c.id]||[]))});
+   rows.forEach(function(c){var cd=renderComment(c,lc[c.id]||0,!!my[c.id],rp[c.id]||[]);cards[c.id]=cd;list.appendChild(cd)});
    offset+=rows.length;more.style.display=done?'none':'inline-block';busy=false})})}
 more.onclick=load;
+function live(){if(!sb||!sb.channel)return;
+ sb.channel('cm-live')
+ .on('postgres_changes',{event:'INSERT',schema:'public',table:'comments'},function(p){var c=p.new;if(!c||c.status!=='approved'||cards[c.id])return;var cd=renderComment(c,0,false,[]);cards[c.id]=cd;st.textContent='';list.insertBefore(cd,list.firstChild)})
+ .on('postgres_changes',{event:'DELETE',schema:'public',table:'comments'},function(p){var id=p.old&&p.old.id;if(id&&cards[id]){cards[id].remove();delete cards[id]}})
+ .on('postgres_changes',{event:'INSERT',schema:'public',table:'replies'},function(p){var r=p.new;if(r&&cards[r.comment_id]&&cards[r.comment_id]._push)cards[r.comment_id]._push(r)})
+ .subscribe()}
 if(DEMO){user={id:'demo',email:'demo@example.com',user_metadata:{full_name:'Demo visitor'}};drawAuth();load()}
 else{sb.auth.getSession().then(function(r){user=r.data&&r.data.session?r.data.session.user:null;
-  return user?sb.from('admins').select('user_id').eq('user_id',user.id).maybeSingle():{data:null}}).then(function(a){isAdmin=!!(a&&a.data);drawAuth();load()})}
+  return user?sb.from('admins').select('user_id').eq('user_id',user.id).maybeSingle():{data:null}}).then(function(a){isAdmin=!!(a&&a.data);drawAuth();load();live()})}
 })();
 </script><script>(function(){var b=document.getElementById('price-toggle');if(!b)return;var open=false;b.onclick=function(){open=!open;document.querySelectorAll('#pricelist details.price-acc').forEach(function(x){x.open=open});b.textContent=open?'Collapse all':'Expand all'}})();</script><div id="cookieBar" style="display:none;position:fixed;left:10px;right:10px;bottom:10px;z-index:99998;background:#0f1f5c;color:#fff;padding:12px 14px;border-radius:10px;font:14px/1.5 Arial,sans-serif;box-shadow:0 4px 16px #0006;max-width:640px;margin:auto">This site uses cookies, including Google cookies for ads and statistics. <a href="/privacy-policy.html" style="color:#fbbf24">Learn more</a> <button id="ckOk" style="margin-left:8px;background:#fbbf24;border:0;border-radius:6px;padding:6px 14px;font-weight:700;cursor:pointer">OK</button></div><script>try{if(!localStorage.getItem("ck1")){var cb=document.getElementById("cookieBar");cb.style.display="block";document.getElementById("ckOk").onclick=function(){cb.style.display="none";try{localStorage.setItem("ck1","1")}catch(e){}}}}catch(e){}</script></body>
 </html>
