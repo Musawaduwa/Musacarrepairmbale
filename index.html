@@ -956,7 +956,26 @@
   }
   </script>
 
-</head>
+<style>/*v4*/nav.fixed{z-index:2000!important;top:10px!important;left:10px!important;right:10px!important;width:auto!important;border-radius:26px!important;border:1px solid rgba(255,255,255,.14)!important;background:rgba(15,31,92,.88)!important;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 10px 28px rgba(0,0,0,.38)!important}
+#contact .grid{gap:.7rem!important}
+#contact .grid>a,#contact .grid>div{padding:.65rem .85rem!important;border-radius:14px!important;gap:.6rem!important}
+#contact .grid>a>div:first-child,#contact .grid>div>div:first-child{width:2.2rem!important;height:2.2rem!important;font-size:1rem!important}
+#contact .grid svg{width:1.05rem!important;height:1.05rem!important}
+#contact .grid .font-black{font-size:14px!important}
+#contact .grid [class*="text-[11px]"]{font-size:10px!important;margin-bottom:0!important}
+#contact .grid [class*="text-[12px]"]{font-size:11px!important;margin-top:0!important}
+#contact h2{font-size:2.2rem!important}
+</style><style>.price-acc>summary{list-style:none}.price-acc>summary::-webkit-details-marker{display:none}.price-acc{margin-bottom:12px}.price-acc[open]>summary{border-bottom:1px solid rgba(255,255,255,.12)}.price-count{margin-left:auto;font-size:12px;color:rgba(255,255,255,.55);white-space:nowrap}.price-chev{margin-left:10px;color:#EA580C;font-size:20px;line-height:1;transition:transform .2s}.price-acc[open] .price-chev{transform:rotate(180deg)}.price-acc>summary:hover{filter:brightness(1.15)}</style><style>/*v10*/.mc-auth{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:16px}.mc-btn{display:inline-block;border:0;border-radius:999px;padding:9px 18px;font-weight:700;font-size:14px;background:#eef1f8;color:#1E3A8A;cursor:pointer;text-decoration:none}.mc-btn.p{background:#1E3A8A;color:#fff}.mc-btn.o{background:#EA580C;color:#fff}.mc-hi{font-weight:700;color:#0f1f5c;align-self:center}
+#cm-list{display:grid;gap:14px;grid-template-columns:1fr}@media(min-width:768px){#cm-list{grid-template-columns:repeat(2,1fr);align-items:start}}@media(min-width:1100px){#cm-list{grid-template-columns:repeat(3,1fr)}}
+.mc{background:#fff;border:1px solid #e1e8f6;border-radius:16px;padding:14px 14px 10px;box-shadow:0 2px 10px rgba(30,58,138,.07)}.mc-top{display:flex;gap:10px;align-items:center}.mc-av{width:40px;height:40px;border-radius:50%;background:#1E3A8A;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;flex:none}.mc-who b{color:#0f1f5c}.mc-meta{font-size:12px;color:#6b7280}
+.mc-msg{margin:10px 0 0;font-size:14.5px;color:#334155;white-space:pre-line;line-height:1.55}.mc-img{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.mc-img img{width:92px;height:92px;object-fit:cover;border-radius:12px}
+.mc-bar{display:flex;gap:8px;margin-top:12px;border-top:1px solid #eef2fb;padding-top:9px}.mc-act{border:0;background:#f1f5fb;border-radius:999px;padding:7px 15px;font-size:13px;font-weight:700;color:#334155;cursor:pointer}.mc-act.on{background:#fee2e2;color:#be123c}
+.mc-rbox{display:none;margin-top:10px;background:#f8faff;border-radius:12px;padding:10px}.mc-rep{border-left:3px solid #fbbf24;padding:2px 0 2px 10px;margin:8px 0}.mc-rep .mc-msg{margin-top:2px;font-size:14px}.mc-rh{display:flex;gap:6px;align-items:center;flex-wrap:wrap;font-size:13px}.mc-rh b{color:#1E3A8A}.mc-del{margin-left:auto;border:0;background:none;color:#dc2626;font-size:12px;cursor:pointer}
+.mc-form textarea{width:100%;box-sizing:border-box;border:1.5px solid #d6dff0;border-radius:10px;padding:8px 10px;font:14px Lato,Arial,sans-serif;min-height:62px}.mc-send{margin-top:6px;border:0;background:#1E3A8A;color:#fff;border-radius:999px;padding:8px 18px;font-weight:700;font-size:13px;cursor:pointer}.mc-send:disabled{opacity:.6}
+.mc-note{display:none;font-size:13px;color:#92400e;background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:6px 10px;margin-top:8px}.mc-note a,.mc-form a{color:#1d4ed8;font-weight:700}
+/* WhatsApp buttons: medium size */
+.btn-wa{padding:.7rem 1.35rem!important;font-size:.95rem!important;line-height:1.3!important;gap:.5rem!important;border-radius:9999px!important}.btn-wa svg{width:1.25rem!important;height:1.25rem!important}
+.float-wa{bottom:20px!important;right:16px!important}.float-wa-btn{width:54px!important;height:54px!important}.float-wa-btn svg{width:28px!important;height:28px!important}</style></head>
 <body>
 
 <div id="entry-overlay" style="position:fixed;inset:0;z-index:9999;background:linear-gradient(160deg,#0a1440 0%,#0f1f5c 55%,#132a72 100%);display:flex;align-items:center;justify-content:center;padding:24px;transition:opacity .5s ease, visibility .5s ease;">
@@ -1025,6 +1044,7 @@
       <li><a href="#workdone" class="hover:text-[#EA580C] transition-colors">Track Record</a></li>
       <li><a href="#gallery" class="hover:text-[#EA580C] transition-colors">Gallery</a></li>
       <li><a href="#books" class="hover:text-[#EA580C] transition-colors">Books</a></li>
+      <li><a href="#comments" class="hover:text-[#EA580C] transition-colors">Comments</a></li>
       <li><a href="#carguides" class="hover:text-[#EA580C] transition-colors">Car Guides</a></li>
       <li><a href="#contact" class="hover:text-[#EA580C] transition-colors">Contact</a></li>
     </ul>
@@ -1047,7 +1067,8 @@
     <a href="#pricelist" onclick="document.getElementById('mobile-menu').classList.remove('open')">Price List</a>
     <a href="#workdone" onclick="document.getElementById('mobile-menu').classList.remove('open')">Track Record</a>
     <a href="#gallery" onclick="document.getElementById('mobile-menu').classList.remove('open')">Gallery</a>
-    <a href="#books" onclick="document.getElementById('mobile-menu').classList.remove('open')">Books</a>
+    <a href="#books" class="hover:text-[#EA580C] transition-colors">Books</a>
+    <a href="#comments" onclick="document.getElementById('mobile-menu').classList.remove('open')">Comments</a>
     <a href="#carguides" onclick="document.getElementById('mobile-menu').classList.remove('open')">Car Guides</a>
     <a href="#contact" onclick="document.getElementById('mobile-menu').classList.remove('open')">Contact</a>
     <a href="https://wa.me/256756587278" target="_blank" class="btn-wa inline-flex items-center gap-2 px-4 py-2 rounded-full text-white w-max">
@@ -1221,7 +1242,7 @@
 
       <div id="svc-mechanical" class="service-card rounded-2xl shadow-sm reveal overflow-hidden relative" style="background: url('https://i.postimg.cc/ht8ZH9C7/General-Mechanical-Repair.jpg') center center / cover no-repeat;"><div class="absolute inset-0" style="background:rgba(8,14,40,0.45)"></div><div class="relative z-10 p-6 h-full flex flex-col justify-end"><div class="service-icon w-12 h-12 rounded-xl bg-white/15 text-white flex items-center justify-center mb-4 text-xl transition-all duration-300 border border-white/20">⚙️</div><h3 class="text-xl font-black text-white mb-2">General Mechanical Repair</h3><p class="text-white/75 text-sm leading-relaxed">From suspension to gearboxes, engines to clutches — no mechanical problem is too big or too small for our workshop.</p></div></div>
 
-      <div id="svc-lights" class="service-card rounded-2xl shadow-sm reveal overflow-hidden relative" style="background: url('https://i.postimg.cc/xTfjs2QD/Light-System-Repair.jpg') center center / cover no-repeat;"><div class="absolute inset-0" style="background:rgba(8,12,35,0.45)"></div><div class="relative z-10 p-6 h-full flex flex-col justify-end"><div class="service-icon w-12 h-12 rounded-xl bg-white/15 text-white flex items-center justify-center mb-4 text-xl transition-all duration-300 border border-white/20">💡</div><h3 class="text-xl font-black text-white mb-2">Light System Repair</h3><p class="text-white/75 text-sm leading-relaxed">Headlights, indicators, interior lighting, and full electrical light system diagnosis and repair. Night-safe driving guaranteed.</p></div></div>
+      <div id="svc-lights" class="service-card rounded-2xl shadow-sm reveal overflow-hidden relative" style="background: url('https://i.postimg.cc/xTfjs2QD/Light-System-Repair.jpg') center center / cover no-repeat;"><div class="absolute inset-0" style="background:rgba(8,12,35,0.45)"></div><div class="relative z-10 p-6 h-full flex flex-col justify-end"><div class="service-icon w-12 h-12 rounded-xl bg-white/15 text-white flex items-center justify-center mb-4 text-xl transition-all duration-300 border border-white/20">💡</div><h3 class="text-xl font-black text-white mb-2">Light System Repair</h3><p class="text-white/75 text-sm leading-relaxed">Headlights, indicators, interior lighting, and full electrical light system diagnosis and repair. Safer night driving.</p></div></div>
 
       <div id="svc-fault-tracing" class="service-card rounded-2xl shadow-sm reveal overflow-hidden relative" style="background: url('https://i.postimg.cc/15vm2jRz/Fault-Tracing-Shoot-Tracing.jpg') center center / cover no-repeat;"><div class="absolute inset-0" style="background:rgba(10,20,50,0.45)"></div><div class="relative z-10 p-6 h-full flex flex-col justify-end"><div class="service-icon w-12 h-12 rounded-xl bg-white/15 text-white flex items-center justify-center mb-4 text-xl transition-all duration-300 border border-white/20">🔎</div><h3 class="text-xl font-black text-white mb-2">Fault Tracing / Shoot Tracing</h3><p class="text-white/75 text-sm leading-relaxed">Intermittent faults, hidden wiring problems, mysterious breakdowns — we hunt down every electrical gremlin with methodical precision.</p></div></div>
 
@@ -1252,7 +1273,7 @@
       <span class="inline-block bg-[#EA580C] text-white font-black uppercase tracking-widest text-sm px-5 py-2 rounded-lg mb-4">PRICE LIST 2026</span>
       <h2 class="text-4xl md:text-6xl font-black text-white mt-2 leading-none">SERVICES &amp; PARTS PRICING</h2>
       <div class="mt-3 mx-auto w-20 h-1.5 bg-[#DC2626] rounded-full"></div>
-      <p class="text-white/50 mt-5 max-w-2xl mx-auto">Transparent pricing. No hidden charges. All prices in Uganda Shillings (UGX). Final price depends on vehicle model &amp; condition.</p>
+      <p class="text-white/50 mt-5 max-w-2xl mx-auto">Transparent pricing. No hidden charges. All prices in Uganda Shillings (UGX). Final price depends on vehicle model &amp; condition.</p><p class="text-white/40 text-sm mt-3">Tap a category to open its prices.</p><button type="button" id="price-toggle" class="mt-5 inline-block text-white/80 border border-white/25 rounded-full px-4 py-1.5 text-sm">Expand all</button>
       <div class="flex flex-wrap justify-center gap-4 mt-4 text-sm">
         <div class="flex items-center gap-2 text-white/60"><span class="text-[#EA580C]">📍</span> Maluku Road, near Bestway Works — Mbale City</div>
         <div class="flex items-center gap-2 text-white/60"><span class="text-[#EA580C]">⚡</span> 14+ Years Experience</div>
@@ -1266,11 +1287,10 @@
         <span class="text-[#EA580C] font-bold uppercase tracking-widest text-sm">Services &amp; Labour</span>
         <div class="flex-1 h-px bg-white/10"></div>
       </div>
-      <div class="rounded-2xl overflow-hidden border border-white/10" style="background:#131f2e;">
-        <div class="px-5 py-4 border-b border-white/10 flex items-center gap-3" style="background:#1a2a3a;">
+      <details class="price-acc rounded-2xl overflow-hidden border border-white/10" style="background:#131f2e;"><summary class="px-5 py-4 flex items-center gap-3 cursor-pointer select-none" style="background:#1a2a3a;">
           <span class="text-2xl">🔍</span>
           <span class="text-white font-black text-lg uppercase tracking-wide">Diagnostic &amp; Repair Services</span>
-        </div>
+        <span class="price-count">25 items</span><span class="price-chev" aria-hidden="true">▾</span></summary>
         
         <div class="divide-y divide-white/8">
 
@@ -1487,7 +1507,7 @@
           </div>
 
         </div>
-      </div>
+      </details>
     </div>
 
     <div class="mb-10 reveal">
@@ -1496,11 +1516,10 @@
         <span class="text-[#EA580C] font-bold uppercase tracking-widest text-sm">Electrical Parts</span>
         <div class="flex-1 h-px bg-white/10"></div>
       </div>
-      <div class="rounded-2xl overflow-hidden border border-white/10" style="background:#131f2e;">
-        <div class="px-5 py-4 border-b border-white/10 flex items-center gap-3" style="background:#1a2a3a;">
+      <details class="price-acc rounded-2xl overflow-hidden border border-white/10" style="background:#131f2e;"><summary class="px-5 py-4 flex items-center gap-3 cursor-pointer select-none" style="background:#1a2a3a;">
           <span class="text-2xl">💡</span>
           <span class="text-white font-black text-lg uppercase tracking-wide">Bulbs &amp; Lighting</span>
-        </div>
+        <span class="price-count">5 items</span><span class="price-chev" aria-hidden="true">▾</span></summary>
         <div class="divide-y divide-white/8">
 
           <div class="flex items-center justify-between px-5 py-4 hover:bg-white/5 transition-colors">
@@ -1544,7 +1563,7 @@
           </div>
 
         </div>
-      </div>
+      </details>
     </div>
 
     <div class="mb-10 reveal">
@@ -1553,11 +1572,10 @@
         <span class="text-[#EA580C] font-bold uppercase tracking-widest text-sm">Security &amp; Tracking</span>
         <div class="flex-1 h-px bg-white/10"></div>
       </div>
-      <div class="rounded-2xl overflow-hidden border border-white/10" style="background:#131f2e;">
-        <div class="px-5 py-4 border-b border-white/10 flex items-center gap-3" style="background:#1a2a3a;">
+      <details class="price-acc rounded-2xl overflow-hidden border border-white/10" style="background:#131f2e;"><summary class="px-5 py-4 flex items-center gap-3 cursor-pointer select-none" style="background:#1a2a3a;">
           <span class="text-2xl">📡</span>
           <span class="text-white font-black text-lg uppercase tracking-wide">Alarms &amp; Trackers</span>
-        </div>
+        <span class="price-count">5 items</span><span class="price-chev" aria-hidden="true">▾</span></summary>
         <div class="divide-y divide-white/8">
 
           <div class="flex items-center justify-between px-5 py-4 hover:bg-white/5 transition-colors">
@@ -1607,7 +1625,7 @@
           </div>
 
         </div>
-      </div>
+      </details>
     </div>
 
     <div class="mb-10 reveal">
@@ -1616,11 +1634,10 @@
         <span class="text-[#EA580C] font-bold uppercase tracking-widest text-sm">Engine &amp; Mechanical Parts</span>
         <div class="flex-1 h-px bg-white/10"></div>
       </div>
-      <div class="rounded-2xl overflow-hidden border border-white/10" style="background:#131f2e;">
-        <div class="px-5 py-4 border-b border-white/10 flex items-center gap-3" style="background:#1a2a3a;">
+      <details class="price-acc rounded-2xl overflow-hidden border border-white/10" style="background:#131f2e;"><summary class="px-5 py-4 flex items-center gap-3 cursor-pointer select-none" style="background:#1a2a3a;">
           <span class="text-2xl">🛢️</span>
           <span class="text-white font-black text-lg uppercase tracking-wide">Spare Parts Available in Stock</span>
-        </div>
+        <span class="price-count">12 items</span><span class="price-chev" aria-hidden="true">▾</span></summary>
         <div class="divide-y divide-white/8">
 
           <div class="flex items-center justify-between px-5 py-4 hover:bg-white/5 transition-colors">
@@ -1723,7 +1740,7 @@
           </div>
 
         </div>
-      </div>
+      </details>
     </div>
 
     <div class="reveal text-center mt-10">
@@ -1782,7 +1799,7 @@
   <div class="max-w-6xl mx-auto">
 
     <div class="text-center mb-6 reveal">
-      <span class="text-[#EA580C] font-bold uppercase tracking-widest text-sm">Peace of Mind, Guaranteed</span>
+      <span class="text-[#EA580C] font-bold uppercase tracking-widest text-sm">Peace of Mind</span>
       <h2 class="text-4xl md:text-6xl font-black text-[#1E3A8A] mt-2 leading-none">WHY CHOOSE<br>MUSA AUTOMOTIVES?</h2>
       <div class="mt-3 mx-auto w-20 h-1.5 bg-[#DC2626] rounded-full"></div>
       <p class="text-gray-500 mt-5 max-w-2xl mx-auto text-lg leading-relaxed">
@@ -2038,7 +2055,7 @@
         Send Booking to WhatsApp
       </button>
       <p class="text-gray-400 text-xs text-center mt-4">Tapping "Send Booking" opens WhatsApp with your details pre-filled — just hit send to confirm with Musa.</p>
-    </form>
+    <p id="bookingPrivacy" class="text-xs text-gray-500 mt-3">Your details open in WhatsApp and are sent only when you press send. By booking you agree to our <a href="/privacy-policy.html" class="underline">Privacy Policy</a> and <a href="/terms.html" class="underline">Terms</a>.</p></form>
   </div>
 </section>
 
@@ -2279,6 +2296,7 @@
   </div>
 </section>
 
+<section id="comments" class="py-16 px-4 md:px-10 bg-white"><div class="max-w-6xl mx-auto"><div class="text-center mb-8"><span class="text-[#EA580C] font-bold uppercase tracking-widest text-sm">Customer Corner</span><h2 class="text-3xl md:text-4xl font-black text-[#0f1f5c] mt-2">Customer Comments &amp; Work Photos</h2><p class="text-gray-600 mt-3 max-w-2xl mx-auto">Customers share their experience and photos of the work we did on their cars. Log in to post, like and reply.</p><div id="cm-auth" class="mc-auth"></div></div><div id="cm-status" class="text-center text-gray-500 text-sm mb-4"></div><div id="cm-list"></div><div class="text-center mt-6"><button type="button" id="cm-more" class="mc-btn p" style="display:none">Load more comments</button></div></div></section>
 <section id="contact" class="contact-bg py-24 px-4 md:px-10">
   <div class="max-w-6xl mx-auto relative z-10">
     <div class="text-center mb-14 reveal">
@@ -2364,7 +2382,7 @@
   </div>
 </section>
 
-<section id="carguides" class="py-20 px-4 md:px-10 bg-[#f0f6ff]"><div class="max-w-6xl mx-auto"><div class="text-center mb-10"><span class="text-[#EA580C] font-bold uppercase tracking-widest text-sm">Free Advice</span><h2 class="text-3xl md:text-4xl font-black text-[#0f1f5c] mt-2">Car Repair &amp; Safety Guides</h2><p class="text-gray-600 mt-3 max-w-2xl mx-auto">Simple, practical guides from our Mbale workshop: breakdowns, warning lights, oil, battery, brakes and more.</p></div><div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"><a href="/engine-overheating-and-coolant.html" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"><span class="font-bold text-[#1E3A8A] text-lg">🌡️ Engine Overheating: Causes, Coolant Care and What to Do</span></a><a href="/exhaust-smoke-colours.html" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"><span class="font-bold text-[#1E3A8A] text-lg">💨 Exhaust Smoke Colours and What They Mean</span></a><a href="/drive-belt-check.html" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"><span class="font-bold text-[#1E3A8A] text-lg">⚙️ How to Check Your Car's Drive Belt</span></a><a href="/tyre-speed-rating-explained.html" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"><span class="font-bold text-[#1E3A8A] text-lg">🛞 Tyre Speed Rating Explained (What "96H" Means)</span></a><a href="/gear-selector-explained.html" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"><span class="font-bold text-[#1E3A8A] text-lg">🕹️ Automatic Gear Selector Explained: P, R, N, D, L, 2, 3</span></a><a href="/clean-battery-terminals.html" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"><span class="font-bold text-[#1E3A8A] text-lg">🔋 How to Clean Battery Terminals (Even With Coca-Cola)</span></a><a href="/brake-dust-and-worn-brakes.html" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"><span class="font-bold text-[#1E3A8A] text-lg">🛞 Brake Dust and Worn Brakes: What Your Wheels Are Telling You</span></a><a href="/check-engine-oil.html" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"><span class="font-bold text-[#1E3A8A] text-lg">🛢️ How to Check Engine Oil Level and Condition</span></a><a href="/fuse-box-guide.html" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"><span class="font-bold text-[#1E3A8A] text-lg">⚡ Car Fuse Box Guide: Find, Check and Replace a Fuse</span></a><a href="/dashboard-warning-lights.html" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"><span class="font-bold text-[#1E3A8A] text-lg">🚨 Dashboard Warning Lights Explained</span></a><a href="/car-wont-start.html" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"><span class="font-bold text-[#1E3A8A] text-lg">🔑 What to Do If Your Car Won't Start</span></a><a href="/flat-tyre-and-blowout.html" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"><span class="font-bold text-[#1E3A8A] text-lg">🛞 Flat Tyre or Burst Tyre: What to Do</span></a><a href="/brake-failure.html" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"><span class="font-bold text-[#1E3A8A] text-lg">🛑 Brake Failure: What to Do and How to Prevent It</span></a><a href="/car-safety-and-care-tips.html" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"><span class="font-bold text-[#1E3A8A] text-lg">🛡️ Car Safety and Care Tips for Every Driver</span></a><a href="/car-electrical-problems-signs.html" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"><span class="font-bold text-[#1E3A8A] text-lg">⚡ 7 Signs Your Car Has an Electrical Problem</span></a><a href="/engine-misfire-causes.html" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"><span class="font-bold text-[#1E3A8A] text-lg">🔥 Engine Misfire: Causes, Symptoms and Fixes</span></a><a href="/car-maintenance-uganda.html" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition"><span class="font-bold text-[#1E3A8A] text-lg">🧰 Car Maintenance Guide for Ugandan Roads</span></a></div><div class="text-center mt-8"><a href="/guides.html" class="inline-block bg-[#1E3A8A] text-white font-bold px-7 py-3 rounded-lg">View all guides</a></div></div></section>
+<section id="carguides" class="py-20 px-4 md:px-10 bg-[#f0f6ff]"><div class="max-w-6xl mx-auto"><div class="text-center mb-10"><span class="text-[#EA580C] font-bold uppercase tracking-widest text-sm">Free Advice</span><h2 class="text-3xl md:text-4xl font-black text-[#0f1f5c] mt-2">Car Repair &amp; Safety Guides</h2><p class="text-gray-600 mt-3 max-w-2xl mx-auto">Simple, practical guides from our Mbale workshop: breakdowns, warning lights, oil, battery, brakes and more.</p></div><div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"><a href="/guides.html#car-battery-drain-overnight" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">🔋 Why Does My Car Battery Drain Overnight?</span></a><a href="/guides.html#alternator-not-charging" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">🔌 Alternator Not Charging: Signs, Tests and Causes</span></a><a href="/guides.html#headlights-dim-or-not-working" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">💡 Headlights Dim, Flickering or Not Working: Causes and Fixes</span></a><a href="/guides.html#obd2-trouble-codes-explained" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">🧾 OBD2 Trouble Codes Explained: P0300, P0171, P0420 and More</span></a><a href="/guides.html#multimeter-basics-for-car-wiring" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">📟 How to Use a Multimeter on a Car: Beginner Guide</span></a><a href="/guides.html#ecu-problems-signs-and-causes" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">🧠 ECU Problems, Fault Codes and Pinouts (Toyota and Nissan)</span></a><a href="/guides.html#engine-overheating-and-coolant" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">🌡️ Engine Overheating: Causes, Coolant Care and What to Do</span></a><a href="/guides.html#exhaust-smoke-colours" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">💨 Exhaust Smoke Colours and What They Mean</span></a><a href="/guides.html#drive-belt-check" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">⚙️ How to Check Your Car's Drive Belt</span></a><a href="/guides.html#tyre-speed-rating-explained" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">🛞 Tyre Speed Rating Explained (What "96H" Means)</span></a><a href="/guides.html#gear-selector-explained" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">🕹️ Automatic Gear Selector Explained: P, R, N, D, L, 2, 3</span></a><a href="/guides.html#clean-battery-terminals" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">🔋 How to Clean Battery Terminals (Even With Coca-Cola)</span></a><a href="/guides.html#brake-dust-and-worn-brakes" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">🛞 Brake Dust and Worn Brakes: What Your Wheels Are Telling You</span></a><a href="/guides.html#check-engine-oil" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">🛢️ How to Check Engine Oil Level and Condition</span></a><a href="/guides.html#fuse-box-guide" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">⚡ Car Fuse Box Guide: Colours, Meanings and How to Replace a Fuse</span></a><a href="/guides.html#dashboard-warning-lights" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">🚨 Dashboard Warning Lights Explained</span></a><a href="/guides.html#before-you-drive" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">🧭 What Every Car Owner Should Do Before Driving (Complete Safety Checklist)</span></a><a href="/guides.html#car-wont-start" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">🔑 What to Do If Your Car Won't Start</span></a><a href="/guides.html#flat-tyre-and-blowout" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">🛞 Flat Tyre or Burst Tyre: What to Do</span></a><a href="/guides.html#brake-failure" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">🛑 Brake Failure: What to Do and How to Prevent It</span></a><a href="/guides.html#car-safety-and-care-tips" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">🛡️ Car Safety and Care Tips for Every Driver</span></a><a href="/guides.html#car-electrical-problems-signs" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">⚡ 7 Signs Your Car Has an Electrical Problem</span></a><a href="/guides.html#engine-misfire-causes" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">🔥 Engine Misfire: Causes, Symptoms and Fixes</span></a><a href="/guides.html#car-maintenance-uganda" class="block bg-white rounded-xl p-5 border border-blue-100 shadow-sm hover:shadow-md transition"><span class="font-bold text-[#1E3A8A] text-lg">🧰 Car Maintenance Guide for Ugandan Roads</span></a></div><div class="text-center mt-8"><a href="/guides.html" class="inline-block bg-[#1E3A8A] text-white font-bold px-7 py-3 rounded-lg">View all guides</a></div></div></section>
 <footer class="bg-[#0a1433] py-8 px-4 text-center">
   <div class="max-w-6xl mx-auto">
     <div class="flex flex-col md:flex-row items-center justify-between gap-4">
@@ -2383,7 +2401,7 @@
       </div>
     </div>
     <div class="border-t border-white/10 mt-6 pt-4">
-      <p class="text-white/60 text-xs font-medium tracking-wide"><div style="margin-bottom:8px;font-size:14px;"><a href="/about.html" style="color:#fff;margin:0 8px">About</a><a href="/guides.html" style="color:#fff;margin:0 8px">Guides</a><a href="/contact.html" style="color:#fff;margin:0 8px">Contact</a><a href="/privacy-policy.html" style="color:#fff;margin:0 8px">Privacy Policy</a><a href="/terms.html" style="color:#fff;margin:0 8px">Terms</a><a href="mailto:mama1212food@gmail.com" style="color:#fff;margin:0 8px">Email</a></div>
+      <p class="text-white/60 text-xs font-medium tracking-wide"><div style="margin-bottom:8px;font-size:14px;"><a href="/about.html" style="color:#fff;margin:0 8px;display:inline-block">About</a><a href="/guides.html" style="color:#fff;margin:0 8px;display:inline-block">Guides</a><a href="/contact.html" style="color:#fff;margin:0 8px;display:inline-block">Contact</a><a href="/privacy-policy.html" style="color:#fff;margin:0 8px;display:inline-block">Privacy Policy</a><a href="/terms.html" style="color:#fff;margin:0 8px;display:inline-block">Terms</a><a href="/disclaimer.html" style="color:#fff;margin:0 8px;display:inline-block">Disclaimer</a><a href="/editorial-policy.html" style="color:#fff;margin:0 8px;display:inline-block">Editorial Policy</a><a href="/account.html" style="color:#fff;margin:0 8px;display:inline-block">Customer Login</a><a href="mailto:mama1212food@gmail.com" style="color:#fff;margin:0 8px;display:inline-block">Email</a></div>
 © 2026 Musa Car Wiring & Diagnosis Mbale. All rights reserved. · Mbale City, Uganda.</p>
       <div class="mt-6 pt-6 border-t border-white/15">
         <div class="bg-gradient-to-r from-white/[0.06] via-white/[0.03] to-transparent border border-white/10 rounded-2xl py-4 px-5 flex flex-wrap items-center justify-center gap-x-5 gap-y-2.5 shadow-[0_8px_24px_rgba(0,0,0,0.2)]">
@@ -2839,5 +2857,94 @@
 })();
 </script>
 
-</body>
+<script src="/comments-config.js"></script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.111.0"></script><script>(function(){
+var list=document.getElementById('cm-list'),st=document.getElementById('cm-status'),auth=document.getElementById('cm-auth'),more=document.getElementById('cm-more');
+if(!list)return;
+var C=window.MUSA_CONFIG||{};
+var hasCfg=!!(C.SUPABASE_URL&&C.SUPABASE_ANON_KEY&&window.supabase);
+var DEMO=!hasCfg&&location.protocol!=='http:'&&location.protocol!=='https:';
+if(!hasCfg&&!DEMO){st.textContent='Customer comments are being set up. Please check back soon.';return}
+var sb=hasCfg?window.supabase.createClient(C.SUPABASE_URL,C.SUPABASE_ANON_KEY):null;
+var user=null,isAdmin=false,PAGE=8,offset=0,done=false,busy=false;
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+function stars(n){return n?new Array(n+1).join('\u2605')+new Array(6-n).join('\u2606'):''}
+function dispName(u){return(u.user_metadata&&u.user_metadata.full_name)||String(u.email||'').split('@')[0]||'Customer'}
+function ago(d){var s=(Date.now()-new Date(d).getTime())/1000;if(s<60)return'just now';var m=s/60;if(m<60)return Math.floor(m)+' min ago';var h=m/60;if(h<24)return Math.floor(h)+' h ago';var dd=h/24;if(dd<30)return Math.floor(dd)+' d ago';return new Date(d).toLocaleDateString()}
+var DEMO_ROWS=[
+ {id:'d1',author_name:'Sarah N.',car:'Toyota Premio, ECU repair',rating:5,message:'My car kept stalling and two garages could not find the problem. Musa traced a damaged wire to the ECU and it has run perfectly since. Honest price and clear explanation.',images:[],created_at:new Date(Date.now()-86400000*2).toISOString(),_likes:7,_rep:[{id:'r1',user_id:'x',author_name:'Peter K.',message:'Same experience here, he really knows wiring.',created_at:new Date(Date.now()-3600000*20).toISOString()}]},
+ {id:'d2',author_name:'David O.',car:'Subaru Forester, battery drain',rating:4,message:'Battery was flat every morning. Found a faulty accessory that was drawing power. Fixed the same day.',images:[],created_at:new Date(Date.now()-86400000*6).toISOString(),_likes:3,_rep:[]},
+ {id:'d3',author_name:'Grace A.',car:'Noah, headlights',rating:5,message:'New wiring for my headlights and now they are very bright. Thank you!',images:[],created_at:new Date(Date.now()-86400000*12).toISOString(),_likes:11,_rep:[]}];
+function drawAuth(){auth.innerHTML='';
+ if(user){auth.appendChild(el('span','mc-hi','\ud83d\udc4b Hi, '+dispName(user)));
+  var a=el('a','mc-btn p','\u270d\ufe0f Post a comment');a.href='/account.html#post';auth.appendChild(a);
+  if(sb){var o=el('button','mc-btn','Log out');o.type='button';o.onclick=function(){sb.auth.signOut().then(function(){location.reload()})};auth.appendChild(o)}}
+ else{var a1=el('a','mc-btn p','\ud83d\udc64 Login / Create account');a1.href='/account.html';auth.appendChild(a1);
+  var b1=el('a','mc-btn o','\u270d\ufe0f Post a comment');b1.href='/account.html#post';auth.appendChild(b1)}}
+function renderReply(r,reps,onchange){
+ var d=el('div','mc-rep'),h=el('div','mc-rh');h.appendChild(el('b',null,r.author_name));h.appendChild(el('span','mc-meta','\u00b7 '+ago(r.created_at)));
+ if(user&&(isAdmin||r.user_id===user.id||DEMO)){var x=el('button','mc-del','Delete');x.type='button';x.onclick=function(){if(!confirm('Delete this reply?'))return;
+   function gone(){d.remove();var i=reps.indexOf(r);if(i>-1)reps.splice(i,1);onchange()}
+   if(!sb){gone();return}
+   sb.from('replies').delete().eq('id',r.id).then(function(res){if(!res.error)gone()})};h.appendChild(x)}
+ d.appendChild(h);d.appendChild(el('p','mc-msg',r.message));return d}
+function renderComment(c,likes,liked,reps){
+ var card=el('div','mc'),top=el('div','mc-top');
+ top.appendChild(el('div','mc-av',String(c.author_name||'?').charAt(0).toUpperCase()));
+ var who=el('div','mc-who');who.appendChild(el('b',null,c.author_name));
+ var meta=[];if(c.car)meta.push(c.car);if(c.rating)meta.push(stars(c.rating));meta.push(ago(c.created_at));who.appendChild(el('div','mc-meta',meta.join(' \u00b7 ')));
+ top.appendChild(who);card.appendChild(top);
+ card.appendChild(el('p','mc-msg',c.message));
+ if(c.images&&c.images.length){var g=el('div','mc-img');c.images.forEach(function(u){var a=el('a');a.href=u;a.target='_blank';a.rel='noopener';var i=el('img');i.src=u;i.loading='lazy';i.alt='Customer photo';i.onerror=function(){a.style.display='none'};a.appendChild(i);g.appendChild(a)});card.appendChild(g)}
+ var bar=el('div','mc-bar'),n=likes,on=liked;
+ var lb=el('button','mc-act');lb.type='button';
+ function lpaint(){lb.textContent=(on?'\u2764\ufe0f ':'\ud83e\udd0d ')+n;lb.className='mc-act'+(on?' on':'');lb.setAttribute('aria-pressed',on?'true':'false')}
+ var rb=el('button','mc-act');rb.type='button';
+ function rpaint(){rb.textContent='\ud83d\udcac '+(reps.length?reps.length+' ':'')+'Reply'}
+ var note=el('div','mc-note');
+ lb.onclick=function(){
+  if(!user){note.innerHTML='Please <a href="/account.html">log in</a> to like comments.';note.style.display='block';return}
+  var was=on;on=!on;n+=on?1:-1;lpaint();
+  if(!sb)return;
+  var q=on?sb.from('comment_likes').insert({comment_id:c.id,user_id:user.id}):sb.from('comment_likes').delete().eq('comment_id',c.id).eq('user_id',user.id);
+  q.then(function(r){if(r.error){on=was;n+=was?1:-1;lpaint()}})};
+ var box=el('div','mc-rbox'),thread=el('div'),form=el('div','mc-form');
+ function drawThread(){thread.innerHTML='';reps.forEach(function(r){thread.appendChild(renderReply(r,reps,function(){rpaint()}))})}
+ if(user){
+  var ta=el('textarea');ta.maxLength=500;ta.placeholder='Write a reply\u2026';
+  var send=el('button','mc-send','Send reply');send.type='button';var msg=el('div','mc-note');
+  send.onclick=function(){var t=ta.value.trim();if(t.length<2){msg.textContent='Please write a reply.';msg.style.display='block';return}
+   send.disabled=true;msg.style.display='none';
+   function added(row){reps.push(row);thread.appendChild(renderReply(row,reps,rpaint));ta.value='';rpaint();send.disabled=false}
+   if(!sb){added({id:'l'+Date.now(),user_id:user.id,author_name:dispName(user),message:t,created_at:new Date().toISOString()});return}
+   sb.from('replies').insert({comment_id:c.id,user_id:user.id,author_name:dispName(user),message:t}).select().single().then(function(r){
+    if(r.error){msg.textContent='Could not send: '+r.error.message;msg.style.display='block';send.disabled=false}else added(r.data)})};
+  form.appendChild(ta);form.appendChild(send);form.appendChild(msg)}
+ else{var p=el('p','mc-meta');p.innerHTML='<a href="/account.html">Log in</a> to reply.';form.appendChild(p)}
+ box.appendChild(thread);box.appendChild(form);
+ rb.onclick=function(){var open=box.style.display==='block';box.style.display=open?'none':'block';if(!open)drawThread()};
+ lpaint();rpaint();bar.appendChild(lb);bar.appendChild(rb);card.appendChild(bar);card.appendChild(note);card.appendChild(box);return card}
+function load(){
+ if(busy||done)return;busy=true;
+ if(DEMO){st.textContent='Preview mode: these are sample comments. Likes and replies here are not saved.';
+  DEMO_ROWS.forEach(function(c){list.appendChild(renderComment(c,c._likes,false,c._rep.slice()))});done=true;more.style.display='none';busy=false;return}
+ if(!offset)st.textContent='Loading comments\u2026';
+ sb.from('comments').select('id,author_name,car,rating,message,images,created_at').eq('status','approved').order('created_at',{ascending:false}).range(offset,offset+PAGE-1).then(function(r){
+  if(r.error){st.textContent='Comments are not available right now.';busy=false;return}
+  var rows=r.data||[];
+  if(!rows.length&&!offset){st.textContent='No comments yet. Be the first to share your experience!';done=true;busy=false;more.style.display='none';return}
+  st.textContent='';if(rows.length<PAGE)done=true;
+  var ids=rows.map(function(c){return c.id});
+  Promise.all([sb.rpc('like_counts',{ids:ids}),user?sb.from('comment_likes').select('comment_id').eq('user_id',user.id).in('comment_id',ids):Promise.resolve({data:[]}),sb.from('replies').select('*').in('comment_id',ids).order('created_at')]).then(function(x){
+   var lc={},my={},rp={};
+   (x[0].data||[]).forEach(function(l){lc[l.comment_id]=l.likes});
+   (x[1].data||[]).forEach(function(l){my[l.comment_id]=1});
+   (x[2].data||[]).forEach(function(rr){(rp[rr.comment_id]=rp[rr.comment_id]||[]).push(rr)});
+   rows.forEach(function(c){list.appendChild(renderComment(c,lc[c.id]||0,!!my[c.id],rp[c.id]||[]))});
+   offset+=rows.length;more.style.display=done?'none':'inline-block';busy=false})})}
+more.onclick=load;
+if(DEMO){user={id:'demo',email:'demo@example.com',user_metadata:{full_name:'Demo visitor'}};drawAuth();load()}
+else{sb.auth.getSession().then(function(r){user=r.data&&r.data.session?r.data.session.user:null;
+  return user?sb.from('admins').select('user_id').eq('user_id',user.id).maybeSingle():{data:null}}).then(function(a){isAdmin=!!(a&&a.data);drawAuth();load()})}
+})();
+</script><script>(function(){var b=document.getElementById('price-toggle');if(!b)return;var open=false;b.onclick=function(){open=!open;document.querySelectorAll('#pricelist details.price-acc').forEach(function(x){x.open=open});b.textContent=open?'Collapse all':'Expand all'}})();</script><div id="cookieBar" style="display:none;position:fixed;left:10px;right:10px;bottom:10px;z-index:99998;background:#0f1f5c;color:#fff;padding:12px 14px;border-radius:10px;font:14px/1.5 Arial,sans-serif;box-shadow:0 4px 16px #0006;max-width:640px;margin:auto">This site uses cookies, including Google cookies for ads and statistics. <a href="/privacy-policy.html" style="color:#fbbf24">Learn more</a> <button id="ckOk" style="margin-left:8px;background:#fbbf24;border:0;border-radius:6px;padding:6px 14px;font-weight:700;cursor:pointer">OK</button></div><script>try{if(!localStorage.getItem("ck1")){var cb=document.getElementById("cookieBar");cb.style.display="block";document.getElementById("ckOk").onclick=function(){cb.style.display="none";try{localStorage.setItem("ck1","1")}catch(e){}}}}catch(e){}</script></body>
 </html>
