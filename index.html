@@ -1044,6 +1044,7 @@
       <li><a href="#workdone" class="hover:text-[#EA580C] transition-colors">Track Record</a></li>
       <li><a href="#gallery" class="hover:text-[#EA580C] transition-colors">Gallery</a></li>
       <li><a href="#books" class="hover:text-[#EA580C] transition-colors">Books</a></li>
+      <li><a href="/ask.html" class="hover:text-[#EA580C] transition-colors">Ask the Mechanic</a></li>
       <li><a href="#comments" class="hover:text-[#EA580C] transition-colors">Comments</a></li>
       <li><a href="#carguides" class="hover:text-[#EA580C] transition-colors">Car Guides</a></li>
       <li><a href="#contact" class="hover:text-[#EA580C] transition-colors">Contact</a></li>
@@ -1068,6 +1069,7 @@
     <a href="#workdone" onclick="document.getElementById('mobile-menu').classList.remove('open')">Track Record</a>
     <a href="#gallery" onclick="document.getElementById('mobile-menu').classList.remove('open')">Gallery</a>
     <a href="#books" class="hover:text-[#EA580C] transition-colors">Books</a>
+    <a href="/ask.html">Ask the Mechanic</a>
     <a href="#comments" onclick="document.getElementById('mobile-menu').classList.remove('open')">Comments</a>
     <a href="#carguides" onclick="document.getElementById('mobile-menu').classList.remove('open')">Car Guides</a>
     <a href="#contact" onclick="document.getElementById('mobile-menu').classList.remove('open')">Contact</a>
@@ -2055,7 +2057,7 @@
         Send Booking to WhatsApp
       </button>
       <p class="text-gray-400 text-xs text-center mt-4">Tapping "Send Booking" opens WhatsApp with your details pre-filled — just hit send to confirm with Musa.</p>
-    <p id="bookingPrivacy" class="text-xs text-gray-500 mt-3">Your details open in WhatsApp and are sent only when you press send. By booking you agree to our <a href="/privacy-policy.html" class="underline">Privacy Policy</a> and <a href="/terms.html" class="underline">Terms</a>.</p></form>
+    <p id="bookingSaved" class="text-sm mt-3" style="display:none"></p><p id="bookingPrivacy" class="text-xs text-gray-500 mt-3">Your details open in WhatsApp and are sent only when you press send. By booking you agree to our <a href="/privacy-policy.html" class="underline">Privacy Policy</a> and <a href="/terms.html" class="underline">Terms</a>.</p></form>
   </div>
 </section>
 
@@ -2296,7 +2298,7 @@
   </div>
 </section>
 
-<section id="comments" class="py-16 px-4 md:px-10 bg-white"><div class="max-w-6xl mx-auto"><div class="text-center mb-8"><span class="text-[#EA580C] font-bold uppercase tracking-widest text-sm">Customer Corner</span><h2 class="text-3xl md:text-4xl font-black text-[#0f1f5c] mt-2">Customer Comments &amp; Work Photos</h2><p class="text-gray-600 mt-3 max-w-2xl mx-auto">Customers share their experience and photos of the work we did on their cars. Log in to post, like and reply.</p><div id="cm-auth" class="mc-auth"></div></div><div id="cm-status" class="text-center text-gray-500 text-sm mb-4"></div><div id="cm-list"></div><div class="text-center mt-6"><button type="button" id="cm-more" class="mc-btn p" style="display:none">Load more comments</button></div></div></section>
+<section id="comments" class="py-16 px-4 md:px-10 bg-white"><div class="max-w-6xl mx-auto"><div class="text-center mb-8"><span class="text-[#EA580C] font-bold uppercase tracking-widest text-sm">Customer Corner</span><h2 class="text-3xl md:text-4xl font-black text-[#0f1f5c] mt-2">Customer Comments &amp; Work Photos</h2><p class="text-gray-600 mt-3 max-w-2xl mx-auto">Customers share their experience and photos of the work we did on their cars. Log in to post, like and reply.</p><div id="cm-auth" class="mc-auth"></div></div><div class="text-center mb-6"><a href="/ask.html" class="mc-btn o">❓ Have a car problem? Ask the Mechanic</a></div><div id="cm-status" class="text-center text-gray-500 text-sm mb-4"></div><div id="cm-list"></div><div class="text-center mt-6"><button type="button" id="cm-more" class="mc-btn p" style="display:none">Load more comments</button></div></div></section>
 <section id="contact" class="contact-bg py-24 px-4 md:px-10">
   <div class="max-w-6xl mx-auto relative z-10">
     <div class="text-center mb-14 reveal">
@@ -2401,7 +2403,7 @@
       </div>
     </div>
     <div class="border-t border-white/10 mt-6 pt-4">
-      <p class="text-white/60 text-xs font-medium tracking-wide"><div style="margin-bottom:8px;font-size:14px;"><a href="/about.html" style="color:#fff;margin:0 8px;display:inline-block">About</a><a href="/guides.html" style="color:#fff;margin:0 8px;display:inline-block">Guides</a><a href="/contact.html" style="color:#fff;margin:0 8px;display:inline-block">Contact</a><a href="/privacy-policy.html" style="color:#fff;margin:0 8px;display:inline-block">Privacy Policy</a><a href="/terms.html" style="color:#fff;margin:0 8px;display:inline-block">Terms</a><a href="/disclaimer.html" style="color:#fff;margin:0 8px;display:inline-block">Disclaimer</a><a href="/editorial-policy.html" style="color:#fff;margin:0 8px;display:inline-block">Editorial Policy</a><a href="/account.html" style="color:#fff;margin:0 8px;display:inline-block">Customer Login</a><a href="mailto:mama1212food@gmail.com" style="color:#fff;margin:0 8px;display:inline-block">Email</a></div>
+      <p class="text-white/60 text-xs font-medium tracking-wide"><div style="margin-bottom:8px;font-size:14px;"><a href="/about.html" style="color:#fff;margin:0 8px;display:inline-block">About</a><a href="/guides.html" style="color:#fff;margin:0 8px;display:inline-block">Guides</a><a href="/contact.html" style="color:#fff;margin:0 8px;display:inline-block">Contact</a><a href="/privacy-policy.html" style="color:#fff;margin:0 8px;display:inline-block">Privacy Policy</a><a href="/terms.html" style="color:#fff;margin:0 8px;display:inline-block">Terms</a><a href="/disclaimer.html" style="color:#fff;margin:0 8px;display:inline-block">Disclaimer</a><a href="/editorial-policy.html" style="color:#fff;margin:0 8px;display:inline-block">Editorial Policy</a><a href="/ask.html" style="color:#fff;margin:0 8px;display:inline-block">Ask the Mechanic</a><a href="/account.html" style="color:#fff;margin:0 8px;display:inline-block">Customer Login</a><a href="mailto:mama1212food@gmail.com" style="color:#fff;margin:0 8px;display:inline-block">Email</a></div>
 © 2026 Musa Car Wiring & Diagnosis Mbale. All rights reserved. · Mbale City, Uganda.</p>
       <div class="mt-6 pt-6 border-t border-white/15">
         <div class="bg-gradient-to-r from-white/[0.06] via-white/[0.03] to-transparent border border-white/10 rounded-2xl py-4 px-5 flex flex-wrap items-center justify-center gap-x-5 gap-y-2.5 shadow-[0_8px_24px_rgba(0,0,0,0.2)]">
@@ -2613,8 +2615,7 @@
     }
 
     const waUrl = 'https://wa.me/256756587278?text=' + encodeURIComponent(message);
-    window.open(waUrl, '_blank');
-    return false;
+    window.open(waUrl, '_blank'); if (window.musaSaveBooking) { window.musaSaveBooking({name:name,phone:phone,car:car,date:date,service:service,details:details}); } return false;
   }
 </script>
 
@@ -2946,6 +2947,17 @@ function load(){
    (x[2].data||[]).forEach(function(rr){(rp[rr.comment_id]=rp[rr.comment_id]||[]).push(rr)});
    rows.forEach(function(c){var cd=renderComment(c,lc[c.id]||0,!!my[c.id],rp[c.id]||[]);cards[c.id]=cd;list.appendChild(cd)});
    offset+=rows.length;more.style.display=done?'none':'inline-block';busy=false})})}
+
+function bkMsg(html,ok){var m=document.getElementById('bookingSaved');if(!m)return;m.innerHTML=html;m.style.display='block';m.style.color=ok?'#065f46':'#92400e'}
+window.musaSaveBooking=function(b){
+ if(DEMO){bkMsg('Preview mode: bookings are not saved here.',false);return}
+ if(!user){bkMsg('\ud83d\udca1 <a href="/account.html" style="text-decoration:underline;font-weight:700">Log in</a> next time to keep a record of your bookings in your dashboard.',false);return}
+ sb.from('bookings').insert({user_id:user.id,name:b.name,phone:b.phone,car:b.car,service:b.service,preferred_date:b.date,details:b.details||null}).then(function(r){
+  if(r.error)bkMsg('Your WhatsApp message was opened. We could not save the record: '+r.error.message,false);
+  else bkMsg('\u2705 Saved in your dashboard. <a href="/account.html#bookings" style="text-decoration:underline;font-weight:700">View my bookings</a>',true)})};
+function bkIntro(){var m=document.getElementById('bookingSaved');if(!m)return;
+ if(user){bkMsg('\ud83d\udc64 Logged in as '+dispName(user)+'. Your booking will also be saved in your dashboard.',true);var n=document.getElementById('book-name');if(n&&!n.value)n.value=(user.user_metadata&&user.user_metadata.full_name)||''}
+ else if(!DEMO){bkMsg('\ud83d\udca1 <a href="/account.html" style="text-decoration:underline;font-weight:700">Log in</a> to keep a record of your bookings in your dashboard.',false)}}
 more.onclick=load;
 function live(){if(!sb||!sb.channel)return;
  sb.channel('cm-live')
@@ -2955,7 +2967,7 @@ function live(){if(!sb||!sb.channel)return;
  .subscribe()}
 if(DEMO){user={id:'demo',email:'demo@example.com',user_metadata:{full_name:'Demo visitor'}};drawAuth();load()}
 else{sb.auth.getSession().then(function(r){user=r.data&&r.data.session?r.data.session.user:null;
-  return user?sb.from('admins').select('user_id').eq('user_id',user.id).maybeSingle():{data:null}}).then(function(a){isAdmin=!!(a&&a.data);drawAuth();load();live()})}
+  return user?sb.from('admins').select('user_id').eq('user_id',user.id).maybeSingle():{data:null}}).then(function(a){isAdmin=!!(a&&a.data);drawAuth();bkIntro();load();live()})}
 })();
 </script><script>(function(){var b=document.getElementById('price-toggle');if(!b)return;var open=false;b.onclick=function(){open=!open;document.querySelectorAll('#pricelist details.price-acc').forEach(function(x){x.open=open});b.textContent=open?'Collapse all':'Expand all'}})();</script><div id="cookieBar" style="display:none;position:fixed;left:10px;right:10px;bottom:10px;z-index:99998;background:#0f1f5c;color:#fff;padding:12px 14px;border-radius:10px;font:14px/1.5 Arial,sans-serif;box-shadow:0 4px 16px #0006;max-width:640px;margin:auto">This site uses cookies, including Google cookies for ads and statistics. <a href="/privacy-policy.html" style="color:#fbbf24">Learn more</a> <button id="ckOk" style="margin-left:8px;background:#fbbf24;border:0;border-radius:6px;padding:6px 14px;font-weight:700;cursor:pointer">OK</button></div><script>try{if(!localStorage.getItem("ck1")){var cb=document.getElementById("cookieBar");cb.style.display="block";document.getElementById("ckOk").onclick=function(){cb.style.display="none";try{localStorage.setItem("ck1","1")}catch(e){}}}}catch(e){}</script></body>
 </html>
